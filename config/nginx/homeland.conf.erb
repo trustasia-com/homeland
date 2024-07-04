@@ -138,7 +138,7 @@ server {
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection "Upgrade";
-    proxy_pass http://app:7000;
+    proxy_pass http://homeland-app-clusterip:7000;
     gzip on;
   }
 }
