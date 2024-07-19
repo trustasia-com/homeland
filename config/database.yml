@@ -3,6 +3,7 @@ default: &default
   pool: <%= ENV["DATABASE_POOL"] || 64 %>
   timeout: 5000
   encoding: utf-8
+  prepared_statements: false
 
 development:
   <<: *default
